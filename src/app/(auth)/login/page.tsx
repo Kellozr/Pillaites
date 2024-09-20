@@ -27,7 +27,7 @@ export default function Page() {
               Don&apos;t have an account? Sign up
             </Link>
             <Link
-              href="/ex-pillaites"
+              href="https://ex-pillaites.onrender.com/"
               className="block text-center text-sm font-bold text-primary hover:underline"
             >
               Are you an Ex-Pillaites? Click here
@@ -43,4 +43,3 @@ export default function Page() {
     </main>
   );
 }
-
