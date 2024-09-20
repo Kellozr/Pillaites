@@ -1,8 +1,9 @@
-import signupImage from "@/assets/signup-image.jpg";
+import signupImage from "@/assets/signup-image.jpg"; // Change the image path if needed
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import SignUpForm from "./SignUpForm";
+import GoogleSignInButton from "./google/GoogleSignInButton"; // You can adjust this if needed
+import SignupForm from "./SignupForm"; // Create a SignupForm component similar to LoginForm
 
 export const metadata: Metadata = {
   title: "Sign Up",
@@ -13,20 +14,20 @@ export default function Page() {
     <main className="flex h-screen items-center justify-center p-5">
       <div className="flex h-full max-h-[40rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
         <div className="w-full space-y-10 overflow-y-auto p-10 md:w-1/2">
-          <div className="space-y-1 text-center">
-            <h1 className="text-3xl font-bold">Sign up to Pillaites</h1>
-            <p className="text-muted-foreground">
-              A place where even <span className="italic">you</span> can find a
-              friend.
-            </p>
-          </div>
+          <h1 className="text-center text-3xl font-bold">Sign Up for Pillaites</h1>
           <div className="space-y-5">
-            <SignUpForm />
+            <GoogleSignInButton />
+            <div className="flex items-center gap-3">
+              <div className="h-px flex-1 bg-muted" />
+              <span>OR</span>
+              <div className="h-px flex-1 bg-muted" />
+            </div>
+            <SignupForm />
             <Link href="/login" className="block text-center hover:underline">
               Already have an account? Log in
             </Link>
             <Link
-              href="/ex-pillaites"
+              href="https://ex-pillaites.onrender.com/"
               className="block text-center text-sm font-bold text-primary hover:underline"
             >
               Are you an Ex-Pillaites? Click here
