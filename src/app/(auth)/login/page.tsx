@@ -27,10 +27,10 @@ export default function Page() {
               Don&apos;t have an account? Sign up
             </Link>
             <Link
-              href="/ex-pillaites"
-              className="block text-center text-sm font-bold text-primary hover:underline"
+              href="https://ex-pillaites.onrender.com/"
+              className="block text-center bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600 transition-colors duration-300"
             >
-              Are you an Ex-Pillaites? Click here
+              Are you an Ex-Pillait? Click here
             </Link>
           </div>
         </div>
@@ -43,4 +43,3 @@ export default function Page() {
     </main>
   );
 }
-
